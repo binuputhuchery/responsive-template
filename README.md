@@ -1,4 +1,4 @@
-# HiFx test | Binu
+# Responsive Template | Binu
 
 ## Installation
 `$ npm install`
