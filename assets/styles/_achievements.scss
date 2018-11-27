@@ -1,0 +1,42 @@
+//Achievements
+.achievements {
+  background: $brand-base;
+  padding: 5.5rem 0;
+  color: $white;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em 0;
+
+    .col {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+
+      i {
+        font-size: 4.8rem;
+      }
+
+      span {
+        font-size: 1.8rem;
+        display: block;
+        padding-top: 4px;
+
+        small {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@include screen-md {
+  //Achievements
+  .achievements {
+    padding: 9.5rem 0;
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0;
+    }
+  }
+}

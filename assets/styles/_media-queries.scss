@@ -1,0 +1,43 @@
+@mixin screen-xs {
+  @media (max-width: $screen-sm - .01em) {
+    @content;
+  }
+}
+
+@mixin screen-sm {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+// Mixin to create media queries
+// Used in creating grid
+@mixin create-media-query($breakpoint) {
+  @if $breakpoint == 0 {
+    @content;
+  }
+
+  @else {
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+  padding: 0 15px;
+
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin: 0 0 2rem;
+    line-height: 2.4rem;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.visible-md {
+  display: none;
+}
+
+//For screen readers only
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@include screen-md {
+  .visible-md {
+    display: block;
+  }
+}
+
+@include screen-xl {
+  .container {
+    width: 117rem;
+    margin: 0 auto;
+  }
+}

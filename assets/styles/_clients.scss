@@ -1,0 +1,25 @@
+//Clients
+.clients {
+  background: $white;
+  padding: 5.5rem 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em 0;
+
+    .col {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@include screen-md {
+  //Clients
+  .clients {
+    .container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}

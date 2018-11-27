@@ -1,0 +1,58 @@
+footer {
+  background: #141414;
+  padding: 4rem 0 1rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div {
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin: 0 0 1.5rem 0;
+        padding: 0;
+        color: #bcbcbc;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #bcbcbc;
+      }
+
+      a {
+        color: #bcbcbc;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &.foot-links {
+        padding-bottom: 3rem;
+        display: grid;
+        grid-gap: 1rem;
+      }
+    }
+  }
+}
+
+@include screen-md {
+  footer {
+    padding: 6rem 0 5rem;
+
+    .container {
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+
+
+      div {
+
+        &.foot-links {
+          padding-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}

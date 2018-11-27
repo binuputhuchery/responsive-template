@@ -1,0 +1,21 @@
+@import 'normalize';
+@import 'variables';
+@import 'media-queries';
+@import 'fonts';
+@import 'typography';
+@import 'layout';
+
+//Content styles
+@import 'header';
+@import 'hero';
+@import 'about';
+@import 'skills';
+@import 'achievements';
+@import 'portfolio';
+@import 'work-progress';
+@import 'services';
+@import 'slick';
+@import 'testimonials';
+@import 'clients';
+@import 'contact';
+@import 'footer';

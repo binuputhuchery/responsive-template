@@ -1,0 +1,35 @@
+//Work
+.work-progress {
+  padding: 5rem 0;
+
+  .container {
+    text-align: center;
+
+    .video-player {
+      position: relative;
+
+      img {
+        max-width: 100%;
+      }
+      .play-button {
+        background: url('../images/play-button.png') no-repeat center center;
+        width: 119px;
+        height: 119px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        cursor: pointer;
+        opacity: 1;
+
+        &:hover {
+        	opacity: .85;
+        }
+      }
+    }
+
+    
+  }
+}

@@ -1,0 +1,113 @@
+//Professional Skills
+.skills {
+  .container {
+    display: grid;
+    .col {
+      img {
+        max-width: 100%
+      }
+
+      #skill {
+        li {
+          margin-top: 7rem; 
+          background: #d8d8d8;  
+          height: .3rem;
+          position: relative;
+
+          .bar { 
+            height: .3rem;
+            position:absolute;
+            background-color: $brand-base;
+
+            &.skill-one {
+              width: 70%;
+              animation: skill-one 2s ease-out;
+              -moz-animation: skill-one 2s ease-out;
+              -webkit-animation: skill-one 2s ease-out;
+            }
+            &.skill-two {
+              width: 90%;
+              animation: skill-two 2s ease-out;
+              -moz-animation: skill-two 2s ease-out;
+              -webkit-animation: skill-two 2s ease-out;
+            }
+            &.skill-three {
+              width: 65%;
+              animation: skill-three 2s ease-out;
+              -moz-animation: skill-three 2s ease-out;
+              -webkit-animation: skill-three 2s ease-out;
+            }
+          }
+
+          @-moz-keyframes skill-one {0%  { width:0px;} 100%{ width:70%;}  }
+          @-moz-keyframes skill-two { 0%  { width:0px;} 100%{ width:90%;}  }
+          @-moz-keyframes skill-three { 0%  { width:0px;} 100%{ width:65%;}  }
+          @-webkit-keyframes skill-one { 0%  { width:0px;} 100%{ width:70%;}  }
+          @-webkit-keyframes skill-two { 0%  { width:0px;} 100%{ width:90%;}  }
+          @-webkit-keyframes skill-three { 0%  { width:0px;} 100%{ width:65%;}  }
+
+          h6 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $black;
+            position:relative; 
+            top:-30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md - 1) {
+  .skills {
+    .container {
+      .col {
+        &:first-child {
+          order: 2;
+          padding-bottom: 5rem;
+        }
+
+        &:last-child {
+          order: 1;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include screen-md {
+  //Professional Skills
+  .skills {
+    .container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 0;
+
+      .col {
+        &:first-child {
+          padding: 0 2.5rem 0 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include screen-xl {
+  //Professional Skills
+  .skills {
+    .container {
+
+      .col {
+        &:first-child {
+          padding: 0 8rem 0 0;
+        }
+      }
+    }
+  }
+}
+
+
+
